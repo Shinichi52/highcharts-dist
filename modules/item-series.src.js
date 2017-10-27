@@ -5,7 +5,7 @@
  *
  * (c) 2010-2017 Torstein Honsi
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -21,7 +21,7 @@
          *
          * Item series type for Highcharts
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         /**

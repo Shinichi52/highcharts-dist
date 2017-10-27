@@ -1,10 +1,10 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  * Annotations module
  *
  * (c) 2009-2017 Torstein Honsi
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -18,7 +18,7 @@
         /**
          * (c) 2009-2017 Highsoft, Black Label
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         var merge = H.merge,
@@ -472,7 +472,7 @@
                     crop: false,
 
                     /**
-                     * A [format](https://www.highcharts.com/docs/chart-concepts/labels-and-string-formatting) string for the data label.
+                     * A [format](https://www./docs/chart-concepts/labels-and-string-formatting) string for the data label.
                      *
                      * @type {String}
                      * @see [plotOptions.series.dataLabels.format](plotOptions.series.dataLabels.format.html)
@@ -563,7 +563,7 @@
                     },
 
                     /**
-                     * Whether to [use HTML](http://www.highcharts.com/docs/chart-concepts/labels-
+                     * Whether to [use HTML](http://www./docs/chart-concepts/labels-
                      * and-string-formatting#html) to render the annotation's label.
                      *
                      * @type {Boolean}

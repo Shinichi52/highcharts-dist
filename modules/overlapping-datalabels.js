@@ -3,7 +3,7 @@
 
  (c) 2009-2017 Torstein Honsi
 
- License: www.highcharts.com/license
+ 
 */
 (function(d){"object"===typeof module&&module.exports?module.exports=d:d(Highcharts)})(function(d){(function(f){var d=f.Chart,k=f.each,m=f.objectEach,q=f.pick,r=f.addEvent;d.prototype.callbacks.push(function(c){r(c,"render",function(){var g=[];k(c.labelCollectors||[],function(a){g=g.concat(a())});k(c.yAxis||[],function(a){a.options.stackLabels&&!a.options.stackLabels.allowOverlap&&m(a.stacks,function(a){m(a,function(a){g.push(a.label)})})});k(c.series||[],function(a){var c=a.options.dataLabels,b=
 a.dataLabelCollections||["dataLabel"];(c.enabled||a._hasPointLabels)&&!c.allowOverlap&&a.visible&&k(b,function(b){k(a.points,function(a){a[b]&&(a[b].labelrank=q(a.labelrank,a.shapeArgs&&a.shapeArgs.height),g.push(a[b]))})})});c.hideOverlappingLabels(g)})});d.prototype.hideOverlappingLabels=function(c){var g=c.length,a,h,b,e,d,f,n,p,l,m=function(a,b,c,d,e,f,g,h){return!(e>a+c||e+g<a||f>b+d||f+h<b)};for(h=0;h<g;h++)if(a=c[h])a.oldOpacity=a.opacity,a.newOpacity=1,a.width||(b=a.getBBox(),a.width=b.width,

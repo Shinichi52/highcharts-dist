@@ -4,7 +4,7 @@
  (c) 2014 Highsoft AS
  Authors: Jon Arild Nygard / Oystein Moseng
 
- License: www.highcharts.com/license
+ 
 */
 (function(u){"object"===typeof module&&module.exports?module.exports=u:u(Highcharts)})(function(u){var E=function(d){var u=d.each,x=d.extend,m=d.pick;return{getColor:function(t,p){var D=p.index,l=p.levelMap,g=p.parentColor,u=p.parentColorIndex,w=p.series,q=p.colors,x=p.siblings,f=w.points,r,B,y;if(t){f=f[t.i];t=l[t.levelDynamic]||{};(r=f&&("boolean"===typeof t.colorByPoint?t.colorByPoint:!!w.options.colorByPoint))&&(B=q[f.index%q.length]);q=f&&f.options.color;r=t&&t.color;if(l=g)l=(l=t&&t.colorVariation)&&
 "brightness"===l.key?d.color(g).brighten(D/x*l.to).get():g;r=m(q,r,B,l,w.color);y=m(f&&f.options.colorIndex,t&&t.colorIndex,u,p.colorIndex)}return{color:r,colorIndex:y}},setTreeValues:function p(d,l){var g=l.before,z=l.idRoot,w=l.mapIdToNode[z],q=l.points[d.i],A=q&&q.options||{},f=0,r=[];x(d,{levelDynamic:d.level-(("boolean"===typeof l.levelIsConstant?l.levelIsConstant:1)?0:w.level),name:m(q&&q.name,""),visible:z===d.id||("boolean"===typeof l.visible?l.visible:!1)});"function"===typeof g&&(d=g(d,

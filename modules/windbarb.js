@@ -4,7 +4,7 @@
 
  (c) 2010-2017 Torstein Honsi
 
- License: www.highcharts.com/license
+ 
 */
 (function(g){"object"===typeof module&&module.exports?module.exports=g:g(Highcharts)})(function(g){var x=function(f){var g=f.each,n=f.seriesTypes,r=f.stableSort;return{translate:function(){n.column.prototype.translate.apply(this);var c=this.options,e=this.chart,d=this.points,a=d.length-1,b,f,p=c.onSeries;b=p&&e.get(p);var c=c.onKey||"y",p=b&&b.options.step,l=b&&b.points,k=l&&l.length,m=this.xAxis,w=this.yAxis,t=m.getExtremes(),u=0,h,v,q;if(b&&b.visible&&k)for(u=(b.pointXOffset||0)+(b.barW||0)/2,b=
 b.currentDataGrouping,v=l[k-1].x+(b?b.totalRange:0),r(d,function(a,b){return a.x-b.x}),c="plot"+c[0].toUpperCase()+c.substr(1);k--&&d[a]&&!(b=d[a],h=l[k],h.x<=b.x&&void 0!==h[c]&&(b.x<=v&&(b.plotY=h[c],h.x<b.x&&!p&&(q=l[k+1])&&void 0!==q[c]&&(b.plotY+=(b.x-h.x)/(q.x-h.x)*(q[c]-h[c]))),a--,k++,0>a)););g(d,function(a,b){var c;void 0===a.plotY&&(a.x>=t.min&&a.x<=t.max?a.plotY=e.chartHeight-m.bottom-(m.opposite?m.height:0)+m.offset-w.top:a.shapeArgs={});a.plotX+=u;(f=d[b-1])&&f.plotX===a.plotX&&(void 0===

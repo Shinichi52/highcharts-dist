@@ -4,7 +4,7 @@
 
  (c) 2010-2017 Highsoft AS
 
- License: www.highcharts.com/license
+ 
 */
 (function(g){"object"===typeof module&&module.exports?module.exports=g:g(Highcharts)})(function(g){(function(d){var g=d.defined,v=d.each,y=d.noop;d.colorPointMixin={isValid:function(){return null!==this.value},setVisible:function(d){var e=this,r=d?"show":"hide";v(["graphic","dataLabel"],function(a){if(e[a])e[a][r]()})},setState:function(r){d.Point.prototype.setState.call(this,r);this.graphic&&this.graphic.attr({zIndex:"hover"===r?1:0})}};d.colorSeriesMixin={pointArrayMap:["value"],axisTypes:["xAxis",
 "yAxis","colorAxis"],optionalAxis:"colorAxis",trackerGroups:["group","markerGroup","dataLabelsGroup"],getSymbol:y,parallelArrays:["x","y","value"],colorKey:"value",translateColors:function(){var d=this,e=this.options.nullColor,w=this.colorAxis,a=this.colorKey;v(this.data,function(b){var c=b[a];if(c=b.options.color||(b.isNull?e:w&&void 0!==c?w.toColor(c,b):b.color||d.color))b.color=c})},colorAttribs:function(d){var e={};g(d.color)&&(e[this.colorProp||"fill"]=d.color);return e}}})(g);(function(d){var g=

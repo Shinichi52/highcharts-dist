@@ -5,7 +5,7 @@
  (c) 2010-2017 Highsoft AS
  Author: Torstein Honsi
 
- License: www.highcharts.com/license
+ 
 */
 (function(k){"object"===typeof module&&module.exports?module.exports=k:k(Highcharts)})(function(k){(function(c){var k=c.win.document,Y=function(){},Z=c.Color,w=c.Series,e=c.seriesTypes,m=c.each,q=c.extend,x=c.addEvent,aa=c.fireEvent,ba=c.isNumber,ca=c.merge,da=c.pick,y=c.wrap,I;c.initCanvasBoost=function(){c.seriesTypes.heatmap&&c.wrap(c.seriesTypes.heatmap.prototype,"drawPoints",function(){var a=this.getContext();a?(m(this.points,function(b){var f=b.plotY;void 0===f||isNaN(f)||null===b.y||(f=b.shapeArgs,
 b=b.series.colorAttribs(b),a.fillStyle=b.fill,a.fillRect(f.x,f.y,f.width,f.height))}),this.canvasToSVG()):this.chart.showLoading("Your browser doesn't support HTML5 canvas, \x3cbr\x3eplease use a modern browser")});c.extend(w.prototype,{getContext:function(){var a=this.chart,b=a.chartWidth,f=a.chartHeight,c=a.seriesGroup||this.group,d=this,e,h=function(a,f,b,d,c,t,h){a.call(this,b,f,d,c,t,h)};a.isChartSeriesBoosting()&&(d=a,c=a.seriesGroup);e=d.ctx;d.canvas||(d.canvas=k.createElement("canvas"),d.renderTarget=

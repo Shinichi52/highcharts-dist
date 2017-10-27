@@ -4,7 +4,7 @@
  *
  * (c) 2010-2017 Torstein Honsi
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -20,7 +20,7 @@
          *
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
 
@@ -70,7 +70,7 @@
                 backgroundColor: 'none', // enable padding
                 crop: false,
                 /**
-                 * The [format string](http://www.highcharts.com/docs/chart-concepts/labels-
+                 * The [format string](http://www./docs/chart-concepts/labels-
                  * and-string-formatting) specifying what to show for _nodes_ in the 
                  * sankey diagram. By default the `nodeFormatter` returns
                  * `{point.name}`.
@@ -90,7 +90,7 @@
                     return this.point.name;
                 },
                 /**
-                 * The [format string](http://www.highcharts.com/docs/chart-concepts/labels-
+                 * The [format string](http://www./docs/chart-concepts/labels-
                  * and-string-formatting) specifying what to show for _links_ in the 
                  * sankey diagram. Defaults to an empty string returned from the 
                  * `formatter`, in effect disabling the labels.
@@ -140,7 +140,7 @@
 
                 pointFormat: '{point.fromNode.name} \u2192 {point.toNode.name}: <b>{point.weight}</b><br/>',
                 /**
-                 * The [format string](http://www.highcharts.com/docs/chart-concepts/labels-
+                 * The [format string](http://www./docs/chart-concepts/labels-
                  * and-string-formatting) specifying what to show for _nodes_ in tooltip
                  * of a sankey diagram series, as opposed to links.
                  */

@@ -5,7 +5,7 @@
  (c) 2010-2017 Highsoft AS
  Author: Kacper Madej
 
- License: www.highcharts.com/license
+ 
 */
 (function(f){"object"===typeof module&&module.exports?module.exports=f:f(Highcharts)})(function(f){(function(b){var f=b.hasTouch,v=b.merge,t=b.wrap,m=b.each,w=b.isNumber,k=b.addEvent,u=b.relativeLength,x=b.objectEach,n=b.Axis,y=b.Pointer;v(!0,n.prototype.defaultYAxisOptions,{minLength:"10%",maxLength:"100%",resize:{controlledAxis:{next:[],prev:[]},enabled:!1,x:0,y:0}});b.AxisResizer=function(a){this.init(a)};b.AxisResizer.prototype={init:function(a,c){this.axis=a;this.options=a.options.resize;this.render();
 c||this.addMouseEvents()},render:function(){var a=this.axis,c=a.chart,d=this.options,b=d.x,e=d.y,d=Math.min(Math.max(a.top+a.height+e,c.plotTop),c.plotTop+c.plotHeight),l={};this.lastPos=d-e;this.controlLine||(this.controlLine=c.renderer.path().addClass("highcharts-axis-resizer"));this.controlLine.add(a.axisGroup);e=this.controlLine.strokeWidth();l.d=c.renderer.crispLine(["M",a.left+b,d,"L",a.left+a.width+b,d],e);this.controlLine.attr(l)},addMouseEvents:function(){var a=this,c=a.controlLine.element,

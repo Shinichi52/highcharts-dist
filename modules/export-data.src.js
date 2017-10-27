@@ -1,10 +1,10 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  * Exporting module
  *
  * (c) 2010-2017 Torstein Honsi
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -20,7 +20,7 @@
          *
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         // @todo

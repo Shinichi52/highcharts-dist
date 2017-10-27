@@ -1,9 +1,9 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  *
- * (c) 2009-2016 Torstein Honsi
+ * 
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -17,7 +17,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var deg2rad = H.deg2rad,
             isNumber = H.isNumber,
@@ -94,7 +94,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var CenteredSeriesMixin = H.CenteredSeriesMixin,
             each = H.each,
@@ -381,7 +381,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var Axis = H.Axis,
             each = H.each,
@@ -959,7 +959,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var each = H.each,
             noop = H.noop,
@@ -1575,7 +1575,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         var seriesType = H.seriesType,
@@ -1673,7 +1673,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var defaultPlotOptions = H.defaultPlotOptions,
             each = H.each,
@@ -1918,7 +1918,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var each = H.each,
             isNumber = H.isNumber,
@@ -2415,7 +2415,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var each = H.each,
             noop = H.noop,
@@ -2801,7 +2801,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var each = H.each,
             noop = H.noop,
@@ -2954,7 +2954,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var correctFloat = H.correctFloat,
             isNumber = H.isNumber,
@@ -3393,7 +3393,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var LegendSymbolMixin = H.LegendSymbolMixin,
             noop = H.noop,
@@ -3537,7 +3537,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var arrayMax = H.arrayMax,
             arrayMin = H.arrayMin,
@@ -4134,7 +4134,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         /**

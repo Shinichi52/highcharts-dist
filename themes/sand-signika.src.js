@@ -1,9 +1,9 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  *
  * (c) 2009-2017 Torstein Honsi
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -17,7 +17,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          * 
          * Sand-Signika theme for Highcharts JS
          * @author Torstein Honsi
@@ -35,7 +35,7 @@
         Highcharts.wrap(Highcharts.Chart.prototype, 'getContainer', function(proceed) {
             proceed.call(this);
             this.container.style.background =
-                'url(http://www.highcharts.com/samples/graphics/sand.png)';
+                'url(http://www./samples/graphics/sand.png)';
         });
 
 

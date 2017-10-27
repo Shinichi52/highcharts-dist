@@ -1,12 +1,12 @@
 /**
- * @license Highcharts JS v5.0.14 (2017-07-28)
+ *  JS v5.0.14 (2017-07-28)
  * X-range series
  *
  * (c) 2010-2017 Torstein Honsi, Lars A. V. Cabrera
  *
  * --- WORK IN PROGRESS ---
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -21,7 +21,7 @@
          * (c) 2014-2017 Highsoft AS
          * Authors: Torstein Honsi, Lars A. V. Cabrera
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         var defaultPlotOptions = H.getOptions().plotOptions,

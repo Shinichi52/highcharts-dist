@@ -3,7 +3,7 @@
  Highcharts Drilldown module
 
  Author: Torstein Honsi
- License: www.highcharts.com/license
+ 
 
 */
 (function(p){"object"===typeof module&&module.exports?module.exports=p:p(Highcharts)})(function(p){(function(f){var p=f.noop,z=f.color,A=f.defaultOptions,l=f.each,q=f.extend,G=f.format,B=f.objectEach,v=f.pick,r=f.wrap,m=f.Chart,w=f.seriesTypes,C=w.pie,t=w.column,D=f.Tick,x=f.fireEvent,E=f.inArray,F=1;q(A.lang,{drillUpText:"\u25c1 Back to {series.name}"});A.drilldown={activeAxisLabelStyle:{cursor:"pointer",color:"#003399",fontWeight:"bold",textDecoration:"underline"},activeDataLabelStyle:{cursor:"pointer",

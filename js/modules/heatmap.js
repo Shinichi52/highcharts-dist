@@ -3,7 +3,7 @@
 
  (c) 2009-2017 Torstein Honsi
 
- License: www.highcharts.com/license
+ 
 */
 (function(k){"object"===typeof module&&module.exports?module.exports=k:k(Highcharts)})(function(k){(function(b){var g=b.Axis,w=b.Chart,n=b.color,p,h=b.each,t=b.extend,u=b.isNumber,q=b.Legend,l=b.LegendSymbolMixin,e=b.noop,r=b.merge,k=b.pick,v=b.wrap;b.ColorAxis||(p=b.ColorAxis=function(){this.init.apply(this,arguments)},t(p.prototype,g.prototype),t(p.prototype,{defaultColorAxisOptions:{lineWidth:0,minPadding:0,maxPadding:0,gridLineWidth:1,tickPixelInterval:72,startOnTick:!0,endOnTick:!0,offset:0,
 marker:{animation:{duration:50},width:.01},labels:{overflow:"justify",rotation:0},minColor:"#e6ebf5",maxColor:"#003399",tickLength:5,showInLegend:!0},keepProps:["legendGroup","legendItemHeight","legendItemWidth","legendItem","legendSymbol"].concat(g.prototype.keepProps),init:function(a,c){var d="vertical"!==a.options.legend.layout,m;this.coll="colorAxis";m=r(this.defaultColorAxisOptions,{side:d?2:1,reversed:!d},c,{opposite:!d,showEmpty:!1,title:null});g.prototype.init.call(this,a,m);c.dataClasses&&

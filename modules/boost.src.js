@@ -1,11 +1,11 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  * Boost module
  *
  * (c) 2010-2017 Highsoft AS
  * Author: Torstein Honsi
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -17,7 +17,7 @@
 }(function(Highcharts) {
     (function(H) {
         /**
-         * License: www.highcharts.com/license
+         * 
          * Author: Christer Vasseng, Torstein Honsi
          *
          * This is an experimental Highcharts module that draws long data series on a canvas
@@ -2530,7 +2530,7 @@
          * Return a full Point object based on the index.
          * The boost module uses stripped point objects for performance reasons.
          * @param   {Number} boostPoint A stripped-down point object
-         * @returns {Object} A Point object as per http://api.highcharts.com/highcharts#Point
+         * @returns {Object} A Point object as per http://api./highcharts#Point
          */
         Series.prototype.getPoint = function(boostPoint) {
             var point = boostPoint,

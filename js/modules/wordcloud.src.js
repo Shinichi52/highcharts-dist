@@ -1,10 +1,10 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  *
  * (c) 2016 Highsoft AS
  * Authors: Jon Arild Nygard
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -59,7 +59,7 @@
          * (c) 2016 Highsoft AS
          * Authors: Jon Arild Nygard
          *
-         * License: www.highcharts.com/license
+         * 
          *
          * This is an experimental Highcharts module which enables visualization
          * of a word cloud.
@@ -419,7 +419,7 @@
              * resulting layout of the wordcloud.
              * It is possible for users to add their own custom placement strategies
              * for use in word cloud. Read more about it in our
-             * [documentation](https://www.highcharts.com/docs/chart-and-series-types/word-cloud-series#custom-placement-strategies)
+             * [documentation](https://www./docs/chart-and-series-types/word-cloud-series#custom-placement-strategies)
              *
              * @validvalue: ["center", "random"]
              */
@@ -450,7 +450,7 @@
              * collision with either another word or the borders.
              * It is possible for users to add their own custom spiralling algorithms
              * for use in word cloud. Read more about it in our
-             * [documentation](https://www.highcharts.com/docs/chart-and-series-types/word-cloud-series#custom-spiralling-algorithm)
+             * [documentation](https://www./docs/chart-and-series-types/word-cloud-series#custom-spiralling-algorithm)
              *
              * @validvalue: ["archimedean", "rectangular", "square"]
              */

@@ -1,9 +1,9 @@
 {
   "name": "highcharts",
   "description": "JavaScript charting framework",
-  "homepage": "http://www.highcharts.com",
+  "homepage": "http://www.",
   "version": "6.0.2",
-  "author": "Highsoft AS <support@highcharts.com> (http://www.highcharts.com/about)",
+  "author": "Highsoft AS <support@> (http://www./about)",
   "main": "highcharts.js",
   "repository": {
     "type": "git",
@@ -19,5 +19,5 @@
     "webpack"
   ],
   "bugs": "https://github.com/highcharts/highcharts/issues",
-  "license": "https://www.highcharts.com/license"
+  "license": "https://www./license"
 }

@@ -5,7 +5,7 @@
  *
  * (c) 2010-2017 Grzegorz Blachliński
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -22,7 +22,7 @@
          *
          * (c) 2010-2017 Grzegorz Blachliński
          *
-         * License: www.highcharts.com/license
+         * 
          */
         /* eslint max-len: ["warn", 80, 4] */
 

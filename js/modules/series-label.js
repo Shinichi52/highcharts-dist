@@ -3,7 +3,7 @@
 
  (c) 2009-2017 Torstein Honsi
 
- License: www.highcharts.com/license
+ 
 */
 (function(t){"object"===typeof module&&module.exports?module.exports=t:t(Highcharts)})(function(t){(function(n){function t(d,b,a,m,c,e){d=(e-b)*(a-d)-(m-b)*(c-d);return 0<d?!0:0>d?!1:!0}function v(d,b,a,m,c,e,f,h){return t(d,b,c,e,f,h)!==t(a,m,c,e,f,h)&&t(d,b,a,m,c,e)!==t(d,b,a,m,f,h)}function B(d,b,a,m,c,e,f,h){return v(d,b,d+a,b,c,e,f,h)||v(d+a,b,d+a,b+m,c,e,f,h)||v(d,b+m,d+a,b+m,c,e,f,h)||v(d,b,d,b+m,c,e,f,h)}function C(d){var b=this,a=Math.max(n.animObject(b.renderer.globalAnimation).duration,
 250),m=!b.hasRendered;d.apply(b,[].slice.call(arguments,1));b.labelSeries=[];b.labelSeriesMaxSum=0;clearTimeout(b.seriesLabelTimer);w(b.series,function(c){var e=c.options.label,d=c.labelBySeries,h=d&&d.closest;e.enabled&&c.visible&&(c.graph||c.area)&&!c.isSeriesBoosting&&(b.labelSeries.push(c),e.minFontSize&&e.maxFontSize&&(c.sum=n.reduce(c.yData,function(a,b){return(a||0)+(b||0)},0),b.labelSeriesMaxSum=Math.max(b.labelSeriesMaxSum,c.sum)),m&&(a=Math.max(a,n.animObject(c.options.animation).duration)),

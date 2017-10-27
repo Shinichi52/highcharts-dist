@@ -6,7 +6,7 @@
 
  --- WORK IN PROGRESS ---
 
- License: www.highcharts.com/license
+ 
 */
 (function(g){"object"===typeof module&&module.exports?module.exports=g:g(Highcharts)})(function(g){(function(d){var g=d.getOptions().plotOptions,m=d.seriesTypes.column,k=d.each,p=d.extendClass,q=d.isNumber,v=d.isObject,n=d.merge,r=d.pick,t=d.seriesTypes,w=d.wrap,x=d.Axis,u=d.Point,y=d.Series;g.xrange=n(g.column,{tooltip:{pointFormat:'\x3cspan style\x3d"color:{point.color}"\x3e\u25cf\x3c/span\x3e {series.name}: \x3cb\x3e{point.yCategory}\x3c/b\x3e\x3cbr/\x3e'}});t.xrange=p(m,{pointClass:p(u,{getLabelConfig:function(){var f=
 u.prototype.getLabelConfig.call(this);f.x2=this.x2;f.yCategory=this.yCategory=this.series.yAxis.categories&&this.series.yAxis.categories[this.y];return f}}),type:"xrange",forceDL:!0,parallelArrays:["x","x2","y"],requireSorting:!1,animate:t.line.prototype.animate,getColumnMetrics:function(){function f(){k(h.series,function(b){var a=b.xAxis;b.xAxis=b.yAxis;b.yAxis=a})}var e,h=this.chart;f();this.yAxis.closestPointRange=1;e=m.prototype.getColumnMetrics.call(this);f();return e},cropData:function(f,e,

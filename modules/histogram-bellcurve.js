@@ -4,7 +4,7 @@
  (c) 2010-2017 Highsoft AS
  Author: Sebastian Domas
 
- License: www.highcharts.com/license
+ 
 */
 (function(b){"object"===typeof module&&module.exports?module.exports=b:b(Highcharts)})(function(b){var t=function(a){var b=a.each,g=a.Series,k=a.addEvent,n=a.fireEvent,d=a.wrap,h={init:function(){g.prototype.init.apply(this,arguments);this.initialised=!1;this.baseSeries=null;this.eventRemovers=[];this.addEvents()},setDerivedData:a.noop,setBaseSeries:function(){var l=this.chart,a=this.options.baseSeries;this.baseSeries=a&&(l.series[a]||l.get(a))||null},addEvents:function(){var a=this,e;e=k(this.chart,
 "seriesLinked",function(){a.setBaseSeries();a.baseSeries&&!a.initialised&&(a.setDerivedData(),a.addBaseSeriesEvents(),a.initialised=!0)});this.eventRemovers.push(e)},addBaseSeriesEvents:function(){var a=this,e,b;e=k(a.baseSeries,"updatedData",function(){a.setDerivedData()});b=k(a.baseSeries,"destroy",function(){a.baseSeries=null;a.initialised=!1});a.eventRemovers.push(e,b)},destroy:function(){b(this.eventRemovers,function(a){a()});g.prototype.destroy.apply(this,arguments)}};d(a.Chart.prototype,"linkSeries",

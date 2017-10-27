@@ -4,7 +4,7 @@
  * (c) 2010-2017 Highsoft AS
  * Author: Sebastian Domas
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {

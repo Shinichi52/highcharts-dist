@@ -1,10 +1,10 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  *
  * (c) 2014 Highsoft AS
  * Authors: Jon Arild Nygard / Oystein Moseng
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -154,7 +154,7 @@
          * (c) 2014 Highsoft AS
          * Authors: Jon Arild Nygard / Oystein Moseng
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         var seriesType = H.seriesType,
@@ -312,7 +312,7 @@
              * 
              * @validvalue ["sliceAndDice", "stripes", "squarified", "strip"]
              * @type {String}
-             * @see [How to write your own algorithm](http://www.highcharts.com/docs/chart-
+             * @see [How to write your own algorithm](http://www./docs/chart-
              * and-series-types/treemap)
              * @sample {highcharts} highcharts/plotoptions/treemap-layoutalgorithm-sliceanddice/ SliceAndDice by default
              * @sample {highcharts} highcharts/plotoptions/treemap-layoutalgorithm-stripes/ Stripes

@@ -5,7 +5,7 @@
  *
  * (c) 2010-2017 Sebastian Bochan
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -154,7 +154,7 @@
         /**
          * (c) 2010-2017 Sebastian Bochan
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
 

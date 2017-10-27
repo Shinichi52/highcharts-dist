@@ -4,7 +4,7 @@
  *
  * (c) 2010-2017 Torstein Honsi
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -18,7 +18,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         var each = H.each,
@@ -144,7 +144,7 @@
          *
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         var each = H.each,

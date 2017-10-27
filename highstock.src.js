@@ -1,9 +1,9 @@
 /**
  * @license Highstock JS v6.0.2 (2017-10-20)
  *
- * (c) 2009-2016 Torstein Honsi
+ * 
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(root, factory) {
@@ -19,7 +19,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         /* global win */
         var doc = win.document,
@@ -66,7 +66,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         /* eslint max-len: ["warn", 80, 4] */
 
@@ -104,7 +104,7 @@
          */
         H.error = function(code, stop) {
             var msg = H.isNumber(code) ?
-                'Highcharts error #' + code + ': www.highcharts.com/errors/' + code :
+                'Highcharts error #' + code + ': www./errors/' + code :
                 code;
             if (stop) {
                 throw new Error(msg);
@@ -2143,7 +2143,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var each = H.each,
             isNumber = H.isNumber,
@@ -2391,7 +2391,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var SVGElement,
             SVGRenderer,
@@ -6472,7 +6472,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         /* eslint max-len: ["warn", 80, 4] */
         var attr = H.attr,
@@ -6920,7 +6920,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var color = H.color,
             getTZOffset = H.getTZOffset,
@@ -6976,7 +6976,7 @@
             /**
              * Styled mode only. Configuration object for adding SVG definitions for
              * reusable elements. See [gradients, shadows and patterns](http://www.
-             * highcharts.com/docs/chart-design-and-style/gradients-shadows-and-
+             * /docs/chart-design-and-style/gradients-shadows-and-
              * patterns) for more information and code examples.
              * 
              * @type {Object}
@@ -7185,7 +7185,7 @@
                  * 
                  * @type {String}
                  * @deprecated
-                 * @default http://code.highcharts.com/{version}/modules/canvas-tools.js
+                 * @default http://code./{version}/modules/canvas-tools.js
                  * @product highcharts highmaps
                  * @apioption global.canvasToolsURL
                  */
@@ -7885,7 +7885,7 @@
                  * @type {String}
                  * @see In styled mode, a plot background image can be set with the
                  * `.highcharts-plot-background` class and a [custom pattern](http://www.
-                 * highcharts.com/docs/chart-design-and-style/gradients-shadows-and-
+                 * /docs/chart-design-and-style/gradients-shadows-and-
                  * patterns).
                  * @sample {highcharts} highcharts/chart/plotbackgroundimage/ Skies
                  * @sample {highstock} stock/chart/plotbackgroundimage/ Skies
@@ -8251,7 +8251,7 @@
                  */
 
                 /**
-                 * Whether to [use HTML](http://www.highcharts.com/docs/chart-concepts/labels-
+                 * Whether to [use HTML](http://www./docs/chart-concepts/labels-
                  * and-string-formatting#html) to render the text.
                  * 
                  * @type {Boolean}
@@ -8387,7 +8387,7 @@
                  */
 
                 /**
-                 * Whether to [use HTML](http://www.highcharts.com/docs/chart-concepts/labels-
+                 * Whether to [use HTML](http://www./docs/chart-concepts/labels-
                  * and-string-formatting#html) to render the text.
                  * 
                  * @type {Boolean}
@@ -8652,7 +8652,7 @@
                  */
 
                 /**
-                 * A [format string](http://www.highcharts.com/docs/chart-concepts/labels-
+                 * A [format string](http://www./docs/chart-concepts/labels-
                  * and-string-formatting) for each legend label. Available variables
                  * relates to properties on the series, or the point in case of pies.
                  * 
@@ -8816,7 +8816,7 @@
                      * Whether to enable the legend navigation. In most cases, disabling
                      * the navigation results in an unwanted overflow.
                      * 
-                     * See also the [adapt chart to legend](http://www.highcharts.com/plugin-
+                     * See also the [adapt chart to legend](http://www./plugin-
                      * registry/single/8/Adapt-Chart-To-Legend) plugin for a solution to
                      * extend the chart height to make room for the legend, optionally in
                      * exported charts only.
@@ -9036,7 +9036,7 @@
                  */
 
                 /**
-                 * Whether to [use HTML](http://www.highcharts.com/docs/chart-concepts/labels-
+                 * Whether to [use HTML](http://www./docs/chart-concepts/labels-
                  * and-string-formatting#html) to render the legend item texts. Prior
                  * to 4.1.7, when using HTML, [legend.navigation](#legend.navigation)
                  * was disabled.
@@ -9740,11 +9740,11 @@
                  * @type {String}
                  * @sample {highcharts} highcharts/credits/href/ Custom URL and text
                  * @sample {highmaps} maps/credits/customized/ Custom URL and text
-                 * @default {highcharts} http://www.highcharts.com
-                 * @default {highstock} "http://www.highcharts.com"
-                 * @default {highmaps} http://www.highcharts.com
+                 * @default {highcharts} http://www.
+                 * @default {highstock} "http://www."
+                 * @default {highmaps} http://www.
                  */
-                href: 'http://www.highcharts.com',
+                href: 'http://www.',
 
                 /**
                  * Position configuration for the credits label.
@@ -9814,14 +9814,14 @@
                  *
                  * @productdesc {highmaps}
                  * If a map is loaded as GeoJSON, the text defaults to `Highcharts @
-                 * {map-credits}`. Otherwise, it defaults to `Highcharts.com`.
+                 * {map-credits}`. Otherwise, it defaults to ``.
                  * 
                  * @type {String}
                  * @sample {highcharts} highcharts/credits/href/ Custom URL and text
                  * @sample {highmaps} maps/credits/customized/ Custom URL and text
-                 * @default {highcharts|highstock} Highcharts.com
+                 * @default {highcharts|highstock} 
                  */
-                text: 'Highcharts.com'
+                text: ''
             }
         };
 
@@ -9948,7 +9948,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var correctFloat = H.correctFloat,
             defined = H.defined,
@@ -10521,7 +10521,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         var addEvent = H.addEvent,
@@ -11648,7 +11648,7 @@
             /**
              * The default label formatter. The context is a special config object for
              * the label. In apps, use the {@link
-             * https://api.highcharts.com/highcharts/xAxis.labels.formatter|
+             * https://api./highcharts/xAxis.labels.formatter|
              * labels.formatter} instead except when a modification is needed.
              *
              * @private
@@ -14371,7 +14371,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var Axis = H.Axis,
             Date = H.Date,
@@ -14640,7 +14640,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var Axis = H.Axis,
             getMagnitude = H.getMagnitude,
@@ -14765,7 +14765,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var arrayMax = H.arrayMax,
             arrayMin = H.arrayMin,
@@ -15084,7 +15084,7 @@
              *
              * @param  {AxisPlotBandsOptions} options
              *         A configuration object for the plot band, as defined in {@link
-             *         https://api.highcharts.com/highcharts/xAxis.plotBands|
+             *         https://api./highcharts/xAxis.plotBands|
              *         xAxis.plotBands}.
              * @return {Object}
              *         The added plot band.
@@ -15100,7 +15100,7 @@
              * 
              * @param  {AxisPlotLinesOptions} options
              *         A configuration object for the plot line, as defined in {@link
-             *         https://api.highcharts.com/highcharts/xAxis.plotLines|
+             *         https://api./highcharts/xAxis.plotLines|
              *         xAxis.plotLines}.
              * @return {Object}
              *         The added plot line.
@@ -15202,7 +15202,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var dateFormat = H.dateFormat,
             each = H.each,
@@ -16070,7 +16070,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var H = Highcharts,
             addEvent = H.addEvent,
@@ -17070,7 +17070,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var charts = H.charts,
             each = H.each,
@@ -17404,7 +17404,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var addEvent = H.addEvent,
             charts = H.charts,
@@ -17521,7 +17521,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var H = Highcharts,
 
@@ -18627,7 +18627,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var addEvent = H.addEvent,
             animate = H.animate,
@@ -18672,7 +18672,7 @@
          * @param  {Function} [callback]
          *         Function to run when the chart has loaded and and all external images
          *         are loaded. Defining a {@link
-         *         https://api.highcharts.com/highcharts/chart.events.load|chart.event.load}
+         *         https://api./highcharts/chart.events.load|chart.event.load}
          *         handler is equivalent.
          *
          * @example
@@ -18699,7 +18699,7 @@
          * @param  {Options} options - The chart options structure.
          * @param  {Function} [callback] - Function to run when the chart has loaded and
          * and all external images are loaded. Defining a {@link
-         * https://api.highcharts.com/highcharts/chart.events.load|chart.event.load}
+         * https://api./highcharts/chart.events.load|chart.event.load}
          * handler is equivalent.
          * @return {Highcharts.Chart} - Returns the Chart object.
          *
@@ -19212,7 +19212,7 @@
              * can be selected either programmatically by the {@link
              * Highcharts.Series#select} function or by checking the checkbox next to
              * the legend item if {@link
-             * https://api.highcharts.com/highcharts/plotOptions.series.showCheckbox|
+             * https://api./highcharts/plotOptions.series.showCheckbox|
              * series.showCheckBox} is true.
              * 
              * @return {Array.<Highcharts.Series>}
@@ -20400,7 +20400,7 @@
                     /**
                      * The chart's credits label. The label has an `update` method that
                      * allows setting new options as per the {@link
-                     * https://api.highcharts.com/highcharts/credits|
+                     * https://api./highcharts/credits|
                      * credits options set}.
                      *
                      * @memberof Highcharts.Chart
@@ -20644,7 +20644,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var Point,
             H = Highcharts,
@@ -21123,7 +21123,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var addEvent = H.addEvent,
             animObject = H.animObject,
@@ -21156,7 +21156,7 @@
         /**
          * This is the base series prototype that all other series types inherit from.
          * A new series is initialized either through the
-         * {@link https://api.highcharts.com/highcharts/series|series} option structure,
+         * {@link https://api./highcharts/series|series} option structure,
          * or after the chart is initialized, through
          * {@link Highcharts.Chart#addSeries}.
          *
@@ -21172,7 +21172,7 @@
          *
          * Configuration options for the series are given in three levels. Options for
          * all series in a chart are given in the
-         * {@link https://api.highcharts.com/highcharts/plotOptions.series|
+         * {@link https://api./highcharts/plotOptions.series|
          * plotOptions.series} object. Then options for all series of a specific type
          * are given in the plotOptions of that type, for example `plotOptions.line`.
          * Next, options for one single series are given in the series array, or as
@@ -22639,7 +22639,7 @@
                  */
 
                 /**
-                 * A [format string](http://www.highcharts.com/docs/chart-concepts/labels-
+                 * A [format string](http://www./docs/chart-concepts/labels-
                  * and-string-formatting) for the data label. Available variables are
                  * the same as for `formatter`.
                  * 
@@ -22829,7 +22829,7 @@
                  */
 
                 /**
-                 * Whether to [use HTML](http://www.highcharts.com/docs/chart-concepts/labels-
+                 * Whether to [use HTML](http://www./docs/chart-concepts/labels-
                  * and-string-formatting#html) to render the labels.
                  *
                  * @type {Boolean}
@@ -25890,7 +25890,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var Axis = H.Axis,
             Chart = H.Chart,
@@ -26376,7 +26376,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var addEvent = H.addEvent,
             animate = H.animate,
@@ -26496,12 +26496,12 @@
             /**
              * Dim the chart and show a loading text or symbol. Options for the loading
              * screen are defined in {@link
-             * https://api.highcharts.com/highcharts/loading|the loading options}.
+             * https://api./highcharts/loading|the loading options}.
              * 
              * @param  {String} str
              *         An optional text to show in the loading label instead of the
              *         default one. The default text is set in {@link
-             *         http://api.highcharts.com/highcharts/lang.loading|lang.loading}.
+             *         http://api./highcharts/lang.loading|lang.loading}.
              *
              * @sample highcharts/members/chart-hideloading/
              *         Show and hide loading from a button
@@ -26626,9 +26626,9 @@
              * enabled and disabled, moved, re-styled, re-formatted etc.
              *
              * A special case is configuration objects that take arrays, for example
-             * {@link https://api.highcharts.com/highcharts/xAxis|xAxis}, 
-             * {@link https://api.highcharts.com/highcharts/yAxis|yAxis} or 
-             * {@link https://api.highcharts.com/highcharts/series|series}. For these
+             * {@link https://api./highcharts/xAxis|xAxis}, 
+             * {@link https://api./highcharts/yAxis|yAxis} or 
+             * {@link https://api./highcharts/series|series}. For these
              * collections, an `id` option is used to map the new option set to an
              * existing object. If an existing object of the same id is not found, the
              * corresponding item is updated. So for example, running `chart.update`
@@ -26638,7 +26638,7 @@
              * adding and removing items from the collection. Read more under the
              * parameter description below.
              *
-             * See also the {@link https://api.highcharts.com/highcharts/responsive|
+             * See also the {@link https://api./highcharts/responsive|
              * responsive option set}. Switching between `responsive.rules` basically
              * runs `chart.update` under the hood.
              *
@@ -27407,7 +27407,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var color = H.color,
             each = H.each,
@@ -27914,7 +27914,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var pick = H.pick,
             seriesType = H.seriesType;
@@ -28159,7 +28159,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var areaProto = H.seriesTypes.area.prototype,
             defaultPlotOptions = H.defaultPlotOptions,
@@ -28266,7 +28266,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var animObject = H.animObject,
             color = H.color,
@@ -29188,7 +29188,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         var seriesType = H.seriesType;
@@ -29309,7 +29309,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var Series = H.Series,
             seriesType = H.seriesType;
@@ -29475,7 +29475,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var deg2rad = H.deg2rad,
             isNumber = H.isNumber,
@@ -29552,7 +29552,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var addEvent = H.addEvent,
             CenteredSeriesMixin = H.CenteredSeriesMixin,
@@ -30475,7 +30475,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var addEvent = H.addEvent,
             arrayMax = H.arrayMax,
@@ -31530,7 +31530,7 @@
         /**
          * (c) 2009-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         /**
          * Highcharts module to hide overlapping data labels. This module is included in
@@ -31726,7 +31726,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var addEvent = H.addEvent,
             Chart = H.Chart,
@@ -32210,7 +32210,7 @@
              * @param  {Boolean} [accumulate=false]
              *         When `true`, the selection is added to other selected points.
              *         When `false`, other selected points are deselected. Internally in
-             *         Highcharts, when {@link http://api.highcharts.com/highcharts/plotOptions.series.allowPointSelect|allowPointSelect}
+             *         Highcharts, when {@link http://api./highcharts/plotOptions.series.allowPointSelect|allowPointSelect}
              *         is `true`, selected points are accumulated on Control, Shift or
              *         Cmd clicking the point.
              *
@@ -32732,7 +32732,7 @@
 
             /**
              * Hide the series if visible. If the {@link
-             * https://api.highcharts.com/highcharts/chart.ignoreHiddenSeries|
+             * https://api./highcharts/chart.ignoreHiddenSeries|
              * chart.ignoreHiddenSeries} option is true, the chart is redrawn without
              * this series.
              *
@@ -32779,7 +32779,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var Chart = H.Chart,
             each = H.each,
@@ -33022,7 +33022,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var addEvent = H.addEvent,
             Axis = H.Axis,
@@ -33806,7 +33806,7 @@
         /**
          * (c) 2009-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         var pick = H.pick,
@@ -34230,7 +34230,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var arrayMax = H.arrayMax,
             arrayMin = H.arrayMin,
@@ -35094,7 +35094,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var each = H.each,
             Point = H.Point,
@@ -35459,7 +35459,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var defaultPlotOptions = H.defaultPlotOptions,
             each = H.each,
@@ -35772,7 +35772,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         var each = H.each,
@@ -35896,7 +35896,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var addEvent = H.addEvent,
             each = H.each,
@@ -36435,7 +36435,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var addEvent = H.addEvent,
             Axis = H.Axis,
@@ -37355,7 +37355,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         /* eslint max-len: ["warn", 80, 4] */
 
@@ -39519,7 +39519,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var addEvent = H.addEvent,
             Axis = H.Axis,
@@ -40999,7 +40999,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var arrayMax = H.arrayMax,
             arrayMin = H.arrayMin,
@@ -41088,7 +41088,7 @@
          *         The DOM element to render to, or its id.
          * @param  {Options} options
          *         The chart options structure as described in the {@link
-         *         https://api.highcharts.com/highstock|options reference}.
+         *         https://api./highstock|options reference}.
          * @param  {Function} callback
          *         A function to execute when the chart object is finished loading and
          *         rendering. In most cases the chart is built in one thread, but in
@@ -41096,7 +41096,7 @@
          *         before the document is ready, and in these cases the chart object
          *         will not be finished synchronously. As a consequence, code that
          *         relies on the newly built Chart object should always run in the
-         *         callback. Defining a {@link https://api.highcharts.com/highstock/chart.events.load|
+         *         callback. Defining a {@link https://api./highstock/chart.events.load|
          *         chart.event.load} handler is equivalent.
          *
          * @return {Chart}
@@ -41596,7 +41596,7 @@
 
         /**
          * Highstock only. Set the {@link
-         * http://api.highcharts.com/highstock/plotOptions.series.compare|
+         * http://api./highstock/plotOptions.series.compare|
          * compare} mode of the series after render time. In most cases it is more
          * useful running {@link Axis#setCompare} on the X axis to update all its
          * series.
@@ -41723,7 +41723,7 @@
          * @function setCompare
          * @memberOf Axis.prototype
          *
-         * @see    {@link https://api.highcharts.com/highstock/series.plotOptions.compare|
+         * @see    {@link https://api./highstock/series.plotOptions.compare|
          *         series.plotOptions.compare}
          *
          * @sample stock/members/axis-setcompare/

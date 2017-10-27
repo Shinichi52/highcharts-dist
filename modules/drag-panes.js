@@ -5,7 +5,7 @@
  (c) 2010-2017 Highsoft AS
  Author: Kacper Madej
 
- License: www.highcharts.com/license
+ 
 */
 (function(f){"object"===typeof module&&module.exports?module.exports=f:f(Highcharts)})(function(f){(function(b){var f=b.hasTouch,v=b.merge,t=b.wrap,n=b.each,w=b.isNumber,k=b.addEvent,u=b.relativeLength,x=b.objectEach,p=b.Axis,y=b.Pointer;v(!0,p.prototype.defaultYAxisOptions,{minLength:"10%",maxLength:"100%",resize:{controlledAxis:{next:[],prev:[]},enabled:!1,cursor:"ns-resize",lineColor:"#cccccc",lineDashStyle:"Solid",lineWidth:4,x:0,y:0}});b.AxisResizer=function(a){this.init(a)};b.AxisResizer.prototype=
 {init:function(a,d){this.axis=a;this.options=a.options.resize;this.render();d||this.addMouseEvents()},render:function(){var a=this.axis,d=a.chart,c=this.options,b=c.x,e=c.y,l=Math.min(Math.max(a.top+a.height+e,d.plotTop),d.plotTop+d.plotHeight),m;m={cursor:c.cursor,stroke:c.lineColor,"stroke-width":c.lineWidth,dashstyle:c.lineDashStyle};this.lastPos=l-e;this.controlLine||(this.controlLine=d.renderer.path().addClass("highcharts-axis-resizer"));this.controlLine.add(a.axisGroup);m.d=d.renderer.crispLine(["M",

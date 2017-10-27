@@ -1,11 +1,11 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  * Drag-panes module
  *
  * (c) 2010-2017 Highsoft AS
  * Author: Kacper Madej
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -22,7 +22,7 @@
          * (c) 2010-2017 Highsoft AS
          * Author: Kacper Madej
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         var hasTouch = H.hasTouch,

@@ -4,7 +4,7 @@
 
  (c) 2010-2017 Torstein Honsi
 
- License: www.highcharts.com/license
+ 
 */
 (function(k){"object"===typeof module&&module.exports?module.exports=k:k(Highcharts)})(function(k){(function(g){var k=g.defined,d=g.each,w=g.extend,x=g.seriesType,y=g.pick,r=g.Point;x("sankey","column",{colorByPoint:!0,curveFactor:.33,dataLabels:{enabled:!0,backgroundColor:"none",crop:!1,nodeFormat:void 0,nodeFormatter:function(){return this.point.name},format:void 0,formatter:function(){return""},inside:!0},nodeWidth:20,nodePadding:10,showInLegend:!1,states:{hover:{linkOpacity:1}},tooltip:{followPointer:!0,
 headerFormat:'\x3cspan class\x3d"highcharts-header"\x3e{series.name}\x3c/span\x3e\x3cbr/\x3e',pointFormat:"{point.fromNode.name} \u2192 {point.toNode.name}: \x3cb\x3e{point.weight}\x3c/b\x3e\x3cbr/\x3e",nodeFormat:"{point.name}: \x3cb\x3e{point.sum}\x3c/b\x3e\x3cbr/\x3e"}},{isCartesian:!1,forceDL:!0,createNode:function(c){function a(a,b){return g.find(a,function(a){return a.id===b})}var b=a(this.nodes,c),e;b||(e=this.options.nodes&&a(this.options.nodes,c),b=(new r).init(this,w({className:"highcharts-node",

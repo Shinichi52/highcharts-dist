@@ -4,7 +4,7 @@
 
  (c) 2010-2017 Torstein Honsi
 
- License: www.highcharts.com/license
+ 
 */
 (function(r){"object"===typeof module&&module.exports?module.exports=r:r(Highcharts)})(function(r){(function(f){var u=f.each,r=f.pick,h=f.win,m=h.document,a=f.seriesTypes,x=void 0!==m.createElement("a").download;f.setOptions({exporting:{csv:{columnHeaderFormatter:null,dateFormat:"%Y-%m-%d %H:%M:%S",itemDelimiter:",",lineDelimiter:"\n"},showTable:!1},lang:{downloadCSV:"Download CSV",downloadXLS:"Download XLS",viewData:"View data table"}});f.Chart.prototype.callbacks.push(function(k){f.addEvent(k,"render",
 function(){k.options&&k.options.exporting&&k.options.exporting.showTable&&k.viewData()})});f.Chart.prototype.setUpKeyToAxis=function(){a.arearange&&(a.arearange.prototype.keyToAxis={low:"y",high:"y"})};f.Chart.prototype.getDataRows=function(){var k=this.options.exporting&&this.options.exporting.csv||{},c,e=this.xAxis,g={},t=[],l,d=[],n,v,a=function(b,c,g){if(k.columnHeaderFormatter){var d=k.columnHeaderFormatter(b,c,g);if(!1!==d)return d}return b instanceof f.Axis?b.options.title&&b.options.title.text||

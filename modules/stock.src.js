@@ -1,10 +1,10 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  * Highstock as a plugin for Highcharts
  *
  * (c) 2017 Torstein Honsi
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -18,7 +18,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var addEvent = H.addEvent,
             Axis = H.Axis,
@@ -802,7 +802,7 @@
         /**
          * (c) 2009-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         var pick = H.pick,
@@ -1226,7 +1226,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var arrayMax = H.arrayMax,
             arrayMin = H.arrayMin,
@@ -2090,7 +2090,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var each = H.each,
             Point = H.Point,
@@ -2455,7 +2455,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var defaultPlotOptions = H.defaultPlotOptions,
             each = H.each,
@@ -2768,7 +2768,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         var each = H.each,
@@ -2892,7 +2892,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var addEvent = H.addEvent,
             each = H.each,
@@ -3431,7 +3431,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var addEvent = H.addEvent,
             Axis = H.Axis,
@@ -4351,7 +4351,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         /* eslint max-len: ["warn", 80, 4] */
 
@@ -6515,7 +6515,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var addEvent = H.addEvent,
             Axis = H.Axis,
@@ -7995,7 +7995,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var arrayMax = H.arrayMax,
             arrayMin = H.arrayMin,
@@ -8084,7 +8084,7 @@
          *         The DOM element to render to, or its id.
          * @param  {Options} options
          *         The chart options structure as described in the {@link
-         *         https://api.highcharts.com/highstock|options reference}.
+         *         https://api./highstock|options reference}.
          * @param  {Function} callback
          *         A function to execute when the chart object is finished loading and
          *         rendering. In most cases the chart is built in one thread, but in
@@ -8092,7 +8092,7 @@
          *         before the document is ready, and in these cases the chart object
          *         will not be finished synchronously. As a consequence, code that
          *         relies on the newly built Chart object should always run in the
-         *         callback. Defining a {@link https://api.highcharts.com/highstock/chart.events.load|
+         *         callback. Defining a {@link https://api./highstock/chart.events.load|
          *         chart.event.load} handler is equivalent.
          *
          * @return {Chart}
@@ -8592,7 +8592,7 @@
 
         /**
          * Highstock only. Set the {@link
-         * http://api.highcharts.com/highstock/plotOptions.series.compare|
+         * http://api./highstock/plotOptions.series.compare|
          * compare} mode of the series after render time. In most cases it is more
          * useful running {@link Axis#setCompare} on the X axis to update all its
          * series.
@@ -8719,7 +8719,7 @@
          * @function setCompare
          * @memberOf Axis.prototype
          *
-         * @see    {@link https://api.highcharts.com/highstock/series.plotOptions.compare|
+         * @see    {@link https://api./highstock/series.plotOptions.compare|
          *         series.plotOptions.compare}
          *
          * @sample stock/members/axis-setcompare/

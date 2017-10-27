@@ -1,9 +1,9 @@
 /*
  Highcharts JS v6.0.2 (2017-10-20)
 
- (c) 2009-2016 Torstein Honsi
+ 
 
- License: www.highcharts.com/license
+ 
 */
 (function(x){"object"===typeof module&&module.exports?module.exports=x:x(Highcharts)})(function(x){(function(a){var t=a.deg2rad,v=a.isNumber,w=a.pick,n=a.relativeLength;a.CenteredSeriesMixin={getCenter:function(){var a=this.options,e=this.chart,k=2*(a.slicedOffset||0),b=e.plotWidth-2*k,e=e.plotHeight-2*k,c=a.center,c=[w(c[0],"50%"),w(c[1],"50%"),a.size||"100%",a.innerSize||0],l=Math.min(b,e),g,d;for(g=0;4>g;++g)d=c[g],a=2>g||2===g&&/%$/.test(d),c[g]=n(d,[b,e,l,c[2]][g])+(a?k:0);c[3]>c[2]&&(c[3]=c[2]);
 return c},getStartAndEndRadians:function(a,e){a=v(a)?a:0;e=v(e)&&e>a&&360>e-a?e:a+360;return{start:t*(a+-90),end:t*(e+-90)}}}})(x);(function(a){function t(a,b){this.init(a,b)}var v=a.CenteredSeriesMixin,w=a.each,n=a.extend,m=a.merge,e=a.splat;n(t.prototype,{coll:"pane",init:function(a,b){this.chart=b;this.background=[];b.pane.push(this);this.setOptions(a)},setOptions:function(a){this.options=m(this.defaultOptions,this.chart.angular?{background:{}}:void 0,a)},render:function(){var a=this.options,b=

@@ -4,7 +4,7 @@
 
  (c) 2010-2017 Highsoft AS
 
- License: www.highcharts.com/license
+ 
 */
 (function(g){"object"===typeof module&&module.exports?module.exports=g:g(Highcharts)})(function(g){(function(d){var g=d.defined,r=d.each,x=d.noop,u=d.seriesTypes;d.colorPointMixin={isValid:function(){return null!==this.value},setVisible:function(d){var f=this,a=d?"show":"hide";r(["graphic","dataLabel"],function(b){if(f[b])f[b][a]()})},setState:function(f){d.Point.prototype.setState.call(this,f);this.graphic&&this.graphic.attr({zIndex:"hover"===f?1:0})}};d.colorSeriesMixin={pointArrayMap:["value"],
 axisTypes:["xAxis","yAxis","colorAxis"],optionalAxis:"colorAxis",trackerGroups:["group","markerGroup","dataLabelsGroup"],getSymbol:x,parallelArrays:["x","y","value"],colorKey:"value",pointAttribs:u.column.prototype.pointAttribs,translateColors:function(){var d=this,v=this.options.nullColor,a=this.colorAxis,b=this.colorKey;r(this.data,function(c){var e=c[b];if(e=c.options.color||(c.isNull?v:a&&void 0!==e?a.toColor(e,c):c.color||d.color))c.color=e})},colorAttribs:function(d){var f={};g(d.color)&&(f[this.colorProp||

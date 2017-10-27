@@ -3,7 +3,7 @@
 
  3D features for Highcharts JS
 
- @license: www.highcharts.com/license
+ @
 */
 (function(C){"object"===typeof module&&module.exports?module.exports=C:C(Highcharts)})(function(C){(function(c){var q=c.deg2rad,u=c.pick;c.perspective=function(p,y,B){var v=y.options.chart.options3d,h=B?y.inverted:!1,z=y.plotWidth/2,r=y.plotHeight/2,A=v.depth/2,e=u(v.depth,1)*u(v.viewDistance,0),b=y.scale3d||1,f=q*v.beta*(h?-1:1),v=q*v.alpha*(h?-1:1),k=Math.cos(v),d=Math.cos(-f),a=Math.sin(v),m=Math.sin(-f);B||(z+=y.plotLeft,r+=y.plotTop);return c.map(p,function(c){var f,l;l=(h?c.y:c.x)-z;var t=(h?
 c.x:c.y)-r,x=(c.z||0)-A;f=d*l-m*x;c=-a*m*l+k*t-d*a*x;l=k*m*l+a*t+k*d*x;t=0<e&&e<Number.POSITIVE_INFINITY?e/(l+A+e):1;f=f*t*b+z;c=c*t*b+r;return{x:h?c:f,y:h?f:c,z:l*b+A}})};c.pointCameraDistance=function(c,y){var p=y.options.chart.options3d,v=y.plotWidth/2;y=y.plotHeight/2;p=u(p.depth,1)*u(p.viewDistance,0)+p.depth;return Math.sqrt(Math.pow(v-c.plotX,2)+Math.pow(y-c.plotY,2)+Math.pow(p-c.plotZ,2))};c.shapeArea=function(c){var y=0,p,v;for(p=0;p<c.length;p++)v=(p+1)%c.length,y+=c[p].x*c[v].y-c[v].x*

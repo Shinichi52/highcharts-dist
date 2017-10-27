@@ -4,7 +4,7 @@
  (c) 2016 Highsoft AS
  Authors: Jon Arild Nygard
 
- License: www.highcharts.com/license
+ 
 */
 (function(m){"object"===typeof module&&module.exports?module.exports=m:m(Highcharts)})(function(m){var w=function(){return function(d){var n=this,k=n.graphic,p=d.animate,m=d.attr,q=d.onComplete,z=d.css,r=d.group,v=d.renderer,D=d.shapeArgs;d=d.shapeType;n.shouldDraw()?(k||(n.graphic=k=v[d](D).add(r)),k.css(z).attr(m).animate(p,void 0,q)):k&&k.animate(p,void 0,function(){n.graphic=k=k.destroy();"function"===typeof q&&q()})}}();(function(d,m){var k=d.each,p=d.extend,n=d.isArray,q=d.isNumber,z=d.isObject,
 r=d.Series,v=function(a,b){return!(b.left>a.right||b.right<a.left||b.top>a.bottom||b.bottom<a.top)},D=function(a,b){var c=!1,g=a.rect,f;a.lastCollidedWith&&(f=a.lastCollidedWith.rect,(c=v(g,f))||delete a.lastCollidedWith);c||(c=!!d.find(b,function(b){var c;f=b.rect;if(c=v(g,f))a.lastCollidedWith=b;return c}));return c},B=function(a){var b=Math.ceil((Math.sqrt(a)-1)/2),c=2*b+1,g=Math.pow(c,2),f=!1,c=c-1;1E4>=a&&("boolean"===typeof f&&a>=g-c&&(f={x:b-(g-a),y:-b}),g-=c,"boolean"===typeof f&&a>=g-c&&

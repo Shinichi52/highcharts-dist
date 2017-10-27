@@ -1,9 +1,9 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  *
  * (c) 2009-2017 Torstein Honsi
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -17,7 +17,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var Axis = H.Axis,
             Chart = H.Chart,
@@ -51,7 +51,7 @@
                  * depending on whether the axis is scalar or based on data classes.
                  *
                  * For supported color formats, see the 
-                 * [docs article about colors](http://www.highcharts.com/docs/chart-design-and-style/colors).
+                 * [docs article about colors](http://www./docs/chart-design-and-style/colors).
                  *
                  * A scalar color axis is represented by a gradient. The colors either range
                  * between the [minColor](#colorAxis.minColor) and the [maxColor](#colorAxis.maxColor),
@@ -963,7 +963,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var defined = H.defined,
             each = H.each,
@@ -1063,7 +1063,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var colorPointMixin = H.colorPointMixin,
             colorSeriesMixin = H.colorSeriesMixin,

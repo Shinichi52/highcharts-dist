@@ -1,9 +1,9 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  * Highcharts Drilldown module
  * 
  * Author: Torstein Honsi
- * License: www.highcharts.com/license
+ * 
  *
  */
 'use strict';
@@ -19,7 +19,7 @@
          * Highcharts Drilldown module
          * 
          * Author: Torstein Honsi
-         * License: www.highcharts.com/license
+         * 
          *
          */
 
@@ -64,7 +64,7 @@
          *
          * The drilldown feature requires the drilldown.js file to be loaded, 
          * found in the modules directory of the download package, or online at 
-         * (code.highcharts.com/modules/drilldown.js)[code.highcharts.com/modules/drilldown.js].
+         * (code./modules/drilldown.js)[code./modules/drilldown.js].
          *
          * @type {Object}
          * @optionparent drilldown
@@ -360,7 +360,7 @@
          * series. This method is used for async drilldown, when clicking a point in a
          * series should result in loading and displaying a more high-resolution series.
          * When not async, the setup is simpler using the {@link 
-         * https://api.highcharts.com/highcharts/drilldown.series|drilldown.series}
+         * https://api./highcharts/drilldown.series|drilldown.series}
          * options structure.
          *
          * @memberOf Highcharts.Chart

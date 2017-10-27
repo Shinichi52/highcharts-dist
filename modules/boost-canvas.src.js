@@ -1,11 +1,11 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  * Boost module
  *
  * (c) 2010-2017 Highsoft AS
  * Author: Torstein Honsi
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -17,7 +17,7 @@
 }(function(Highcharts) {
     (function(H) {
         /**
-         * License: www.highcharts.com/license
+         * 
          * Author: Torstein Honsi, Christer Vasseng
          *
          * This module serves as a fallback for the Boost module in IE9 and IE10. Newer

@@ -4,7 +4,7 @@
  (c) 2016 Highsoft AS
  Authors: Jon Arild Nygard
 
- License: www.highcharts.com/license
+ 
 */
 (function(z){"object"===typeof module&&module.exports?module.exports=z:z(Highcharts)})(function(z){(function(b){var u=b.deg2rad,f=b.isNumber,k=b.pick,A=b.relativeLength;b.CenteredSeriesMixin={getCenter:function(){var b=this.options,t=this.chart,q=2*(b.slicedOffset||0),l=t.plotWidth-2*q,t=t.plotHeight-2*q,v=b.center,v=[k(v[0],"50%"),k(v[1],"50%"),b.size||"100%",b.innerSize||0],f=Math.min(l,t),w,B;for(w=0;4>w;++w)B=v[w],b=2>w||2===w&&/%$/.test(B),v[w]=A(B,[l,t,f,v[2]][w])+(b?q:0);v[3]>v[2]&&(v[3]=v[2]);
 return v},getStartAndEndRadians:function(b,t){b=f(b)?b:0;t=f(t)&&t>b&&360>t-b?t:b+360;return{start:u*(b+-90),end:u*(t+-90)}}}})(z);var O=function(){return function(b){var u=this,f=u.graphic,k=b.animate,A=b.attr,p=b.onComplete,t=b.css,q=b.group,l=b.renderer,v=b.shapeArgs;b=b.shapeType;u.shouldDraw()?(f||(u.graphic=f=l[b](v).add(q)),f.css(t).attr(A).animate(k,void 0,p)):f&&f.animate(k,void 0,function(){u.graphic=f=f.destroy();"function"===typeof p&&p()})}}(),K=function(b){var u=b.each,f=b.extend,k=

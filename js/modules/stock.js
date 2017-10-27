@@ -4,7 +4,7 @@
 
  (c) 2017 Torstein Honsi
 
- License: www.highcharts.com/license
+ 
 */
 (function(H){"object"===typeof module&&module.exports?module.exports=H:H(Highcharts)})(function(H){(function(a){var E=a.addEvent,A=a.Axis,B=a.Chart,v=a.css,F=a.dateFormat,t=a.defined,G=a.each,k=a.extend,p=a.noop,z=a.pick,D=a.timeUnits,r=a.wrap;r(a.Series.prototype,"init",function(a){var c;a.apply(this,Array.prototype.slice.call(arguments,1));(c=this.xAxis)&&c.options.ordinal&&E(this,"updatedData",function(){delete c.ordinalIndex})});r(A.prototype,"getTimeTicks",function(a,b,g,w,n,f,h,q){var c=0,u,
 d,m={},l,e,y,x=[],N=-Number.MAX_VALUE,I=this.options.tickPixelInterval;if(!this.options.ordinal&&!this.options.breaks||!f||3>f.length||void 0===g)return a.call(this,b,g,w,n);e=f.length;for(u=0;u<e;u++){y=u&&f[u-1]>w;f[u]<g&&(c=u);if(u===e-1||f[u+1]-f[u]>5*h||y){if(f[u]>N){for(d=a.call(this,b,f[c],f[u],n);d.length&&d[0]<=N;)d.shift();d.length&&(N=d[d.length-1]);x=x.concat(d)}c=u+1}if(y)break}a=d.info;if(q&&a.unitRange<=D.hour){u=x.length-1;for(c=1;c<u;c++)F("%d",x[c])!==F("%d",x[c-1])&&(m[x[c]]="day",

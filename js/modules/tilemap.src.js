@@ -4,7 +4,7 @@
  *
  * (c) 2010-2017 Highsoft AS
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -18,7 +18,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var defined = H.defined,
             each = H.each,
@@ -118,7 +118,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var colorPointMixin = H.colorPointMixin,
             colorSeriesMixin = H.colorSeriesMixin,
@@ -469,7 +469,7 @@
          * (c) 2010-2017 Highsoft AS
          * Author: Øystein Moseng
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         var seriesType = H.seriesType,

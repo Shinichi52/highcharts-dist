@@ -4,7 +4,7 @@
 
  (c) 2012-2017 Torstein Honsi
 
- License: www.highcharts.com/license
+ 
 */
 (function(w){"object"===typeof module&&module.exports?module.exports=w:w(Highcharts)})(function(w){(function(n){var w=n.win.document,t=n.each,C=n.objectEach,D=n.pick,z=n.inArray,A=n.isNumber,E=n.splat,F=n.fireEvent,B,v;B=Array.prototype.some?function(a,b,d){Array.prototype.some.call(a,b,d)}:function(a,b,d){for(var f=0,e=a.length;f<e&&!0!==b.call(d,a[f],f,a);f++);};var x=function(a,b){this.init(a,b)};n.extend(x.prototype,{init:function(a,b){this.options=a;this.chartOptions=b;this.columns=a.columns||
 this.rowsToColumns(a.rows)||[];this.firstRowAsNames=D(a.firstRowAsNames,!0);this.decimalRegex=a.decimalPoint&&new RegExp("^(-?[0-9]+)"+a.decimalPoint+"([0-9]+)$");this.rawColumns=[];this.columns.length?this.dataFound():(this.parseCSV(),this.parseTable(),this.parseGoogleSpreadsheet())},getColumnDistribution:function(){var a=this.chartOptions,b=this.options,d=[],f=function(a){return(n.seriesTypes[a||"line"].prototype.pointArrayMap||[0]).length},e=a&&a.chart&&a.chart.type,c=[],h=[],m=0,g;t(a&&a.series||

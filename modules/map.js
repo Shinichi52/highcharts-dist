@@ -4,7 +4,7 @@
 
  (c) 2011-2017 Torstein Honsi
 
- License: www.highcharts.com/license
+ 
 */
 (function(w){"object"===typeof module&&module.exports?module.exports=w:w(Highcharts)})(function(w){(function(a){var h=a.Axis,q=a.each,g=a.pick;a=a.wrap;a(h.prototype,"getSeriesExtremes",function(a){var f=this.isXAxis,x,r,u=[],e;f&&q(this.series,function(a,b){a.useMapGeometry&&(u[b]=a.xData,a.xData=[])});a.call(this);f&&(x=g(this.dataMin,Number.MAX_VALUE),r=g(this.dataMax,-Number.MAX_VALUE),q(this.series,function(a,b){a.useMapGeometry&&(x=Math.min(x,g(a.minX,x)),r=Math.max(r,g(a.maxX,r)),a.xData=u[b],
 e=!0)}),e&&(this.dataMin=x,this.dataMax=r))});a(h.prototype,"setAxisTranslation",function(a){var k=this.chart,f=k.plotWidth/k.plotHeight,k=k.xAxis[0],g;a.call(this);"yAxis"===this.coll&&void 0!==k.transA&&q(this.series,function(a){a.preserveAspectRatio&&(g=!0)});if(g&&(this.transA=k.transA=Math.min(this.transA,k.transA),a=f/((k.max-k.min)/(this.max-this.min)),a=1>a?this:k,f=(a.max-a.min)*a.transA,a.pixelPadding=a.len-f,a.minPixelPadding=a.pixelPadding/2,f=a.fixTo)){f=f[1]-a.toValue(f[0],!0);f*=a.transA;

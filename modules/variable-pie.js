@@ -5,7 +5,7 @@
 
  (c) 2010-2017 Grzegorz Blachliski
 
- License: www.highcharts.com/license
+ 
 */
 (function(g){"object"===typeof module&&module.exports?module.exports=g:g(Highcharts)})(function(g){(function(f){var g=f.pick,t=f.each,q=f.grep,u=f.arrayMin,w=f.arrayMax,x=f.seriesType,y=f.seriesTypes.pie.prototype;x("variablepie","pie",{minPointSize:"10%",maxPointSize:"100%",zMin:void 0,zMax:void 0,sizeBy:"area",tooltip:{pointFormat:'\x3cspan style\x3d"color:{point.color}"\x3e\u25cf\x3c/span\x3e {series.name}\x3cbr/\x3eValue: {point.y}\x3cbr/\x3eSize: {point.z}\x3cbr/\x3e'}},{pointArrayMap:["y","z"],
 parallelArrays:["x","y","z"],redraw:function(){this.center=null;y.redraw.call(this,arguments)},zValEval:function(a){return"number"!==typeof a||isNaN(a)?null:!0},calculateExtremes:function(){var a=this.chart,k=this.options,e;e=this.zData;var z=Math.min(a.plotWidth,a.plotHeight)-2*(k.slicedOffset||0),h={},a=this.center||this.getCenter();t(["minPointSize","maxPointSize"],function(a){var b=k[a],c=/%$/.test(b),b=parseInt(b,10);h[a]=c?z*b/100:2*b});this.minPxSize=a[3]+h.minPointSize;this.maxPxSize=Math.max(Math.min(a[2],

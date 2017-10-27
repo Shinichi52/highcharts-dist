@@ -5,7 +5,7 @@
 
  (c) 2010-2017 Pawel Fus
 
- License: www.highcharts.com/license
+ 
 */
 (function(k){"object"===typeof module&&module.exports?module.exports=k:k(Highcharts)})(function(k){(function(c){function k(b){var a=this.series.chart,d=b.apply(this,Array.prototype.slice.call(arguments,1)),u,g;a.hasParallelCoordinates&&!n(d.formattedValue)&&(g=a.yAxis[this.x],a=g.options,a=(u=v(a.tooltipValueFormat,a.labels.format))?c.format(u,q(this,{value:this.y})):g.isDatetimeAxis?c.dateFormat(a.dateTimeLabelFormats[g.tickPositions.info.unitName],this.y):a.categories?a.categories[this.y]:this.y,
 d.formattedValue=d.point.formattedValue=a);return d}var r=c.Series.prototype,t=c.Chart.prototype,p=c.Axis.prototype,v=c.pick,l=c.each,e=c.wrap,m=c.merge,y=c.erase,w=c.splat,q=c.extend,n=c.defined,z=c.arrayMin,A=c.arrayMax,x={lineWidth:0,tickLength:0,opposite:!0,type:"category"};c.setOptions({chart:{parallelCoordinates:!1,parallelAxes:{lineWidth:1,title:{text:"",reserveSpace:!1},labels:{x:0,y:4,align:"center",reserveSpace:!1},offset:0}}});e(t,"init",function(b,a){var d=w(a.yAxis||{}),c=d.length,g=

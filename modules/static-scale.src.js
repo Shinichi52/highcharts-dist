@@ -1,12 +1,12 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  * StaticScale
  *
  * (c) 2016 Torstein Honsi, Lars A. V. Cabrera
  *
  * --- WORK IN PROGRESS ---
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -20,7 +20,7 @@
         /**
          * (c) 2017 Torstein Honsi, Lars Cabrera
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         var Chart = H.Chart,

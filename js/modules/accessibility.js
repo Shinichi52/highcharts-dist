@@ -5,7 +5,7 @@
  (c) 2010-2017 Highsoft AS
  Author: Oystein Moseng
 
- License: www.highcharts.com/license
+ 
 */
 (function(q){"object"===typeof module&&module.exports?module.exports=q:q(Highcharts)})(function(q){(function(e){function q(a){return a.replace(/&/g,"\x26amp;").replace(/</g,"\x26lt;").replace(/>/g,"\x26gt;").replace(/"/g,"\x26quot;").replace(/'/g,"\x26#x27;").replace(/\//g,"\x26#x2F;")}function B(a){for(var c=a.childNodes.length;c--;)a.appendChild(a.childNodes[c])}function r(a){var c;a&&a.onclick&&l.createEvent&&(c=l.createEvent("Events"),c.initEvent("click",!0,!1),a.onclick(c))}function m(a){return a.isNull&&
 a.series.chart.options.accessibility.keyboardNavigation.skipNullPoints||a.series.options.skipKeyboardNavigation||!a.series.visible}var A=e.win,l=A.document,h=e.each,C=e.erase,x=e.addEvent,D=e.removeEvent,y=e.fireEvent,E=e.dateFormat,v=e.merge,z={position:"absolute",left:"-9999px",top:"auto",width:"1px",height:"1px",overflow:"hidden"},t={"default":["series","data point","data points"],line:["line","data point","data points"],spline:["line","data point","data points"],area:["line","data point","data points"],

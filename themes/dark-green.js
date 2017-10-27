@@ -3,7 +3,7 @@
 
  (c) 2009-2017 Torstein Honsi
 
- License: www.highcharts.com/license
+ 
 */
 (function(a){"object"===typeof module&&module.exports?module.exports=a:a(Highcharts)})(function(a){a.theme={colors:"#DDDF0D #55BF3B #DF5353 #7798BF #aaeeee #ff0066 #eeaaee #55BF3B #DF5353 #7798BF #aaeeee".split(" "),chart:{backgroundColor:{linearGradient:[0,0,250,500],stops:[[0,"rgb(48, 96, 48)"],[1,"rgb(0, 0, 0)"]]},borderColor:"#000000",borderWidth:2,className:"dark-container",plotBackgroundColor:"rgba(255, 255, 255, .1)",plotBorderColor:"#CCCCCC",plotBorderWidth:1},title:{style:{color:"#C0C0C0",
 font:'bold 16px "Trebuchet MS", Verdana, sans-serif'}},subtitle:{style:{color:"#666666",font:'bold 12px "Trebuchet MS", Verdana, sans-serif'}},xAxis:{gridLineColor:"#333333",gridLineWidth:1,labels:{style:{color:"#A0A0A0"}},lineColor:"#A0A0A0",tickColor:"#A0A0A0",title:{style:{color:"#CCC",fontWeight:"bold",fontSize:"12px",fontFamily:"Trebuchet MS, Verdana, sans-serif"}}},yAxis:{gridLineColor:"#333333",labels:{style:{color:"#A0A0A0"}},lineColor:"#A0A0A0",minorTickInterval:null,tickColor:"#A0A0A0",

@@ -1,10 +1,10 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  * Exporting module
  *
  * (c) 2010-2017 Torstein Honsi
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -20,7 +20,7 @@
          *
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         /* eslint indent:0 */
@@ -413,7 +413,7 @@
         // Add the export related options
 
         /**
-         * Options for the exporting module. For an overview on the matter, see [the docs](http://www.highcharts.com/docs/export-module/export-module-overview).
+         * Options for the exporting module. For an overview on the matter, see [the docs](http://www./docs/export-module/export-module-overview).
          * @type {Object}
          * @optionparent exporting
          */
@@ -519,7 +519,7 @@
              * js), required for client side export in certain browsers.
              * 
              * @type {String}
-             * @default https://code.highcharts.com/{version}/lib
+             * @default https://code./{version}/lib
              * @since 5.0.0
              * @apioption exporting.libURL
              */
@@ -576,10 +576,10 @@
              * format. By default this points to Highchart's free web service.
              * 
              * @type {String}
-             * @default https://export.highcharts.com
+             * @default https://export.
              * @since 2.0
              */
-            url: 'https://export.highcharts.com/',
+            url: 'https://export./',
             /**
              * When printing the chart from the menu item in the burger menu, if
              * the on-screen chart exceeds this width, it is resized. After printing
@@ -1104,7 +1104,7 @@
              * along with some parameters for conversion.
              * @param  {Object} exportingOptions
              *         Exporting options in addition to those defined in {@link
-             *         https://api.highcharts.com/highcharts/exporting|exporting}.
+             *         https://api./highcharts/exporting|exporting}.
              * @param  {String} exportingOptions.filename
              *         The file name for the export without extension.
              * @param  {String} exportingOptions.url

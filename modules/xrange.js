@@ -4,7 +4,7 @@
 
  (c) 2010-2017 Torstein Honsi, Lars A. V. Cabrera
 
- License: www.highcharts.com/license
+ 
 */
 (function(e){"object"===typeof module&&module.exports?module.exports=e:e(Highcharts)})(function(e){(function(c){var e=c.defined,u=c.Color,n=c.seriesTypes.column,g=c.each,v=c.isNumber,q=c.isObject,r=c.merge,m=c.pick,w=c.seriesType,x=c.wrap,y=c.Axis,t=c.Point,z=c.Series;w("xrange","column",{colorByPoint:!0,dataLabels:{verticalAlign:"middle",inside:!0,formatter:function(){var a=this.point.partialFill;q(a)&&(a=a.amount);e(a)||(a=0);return 100*a+"%"}},tooltip:{headerFormat:'\x3cspan style\x3d"font-size: 0.85em"\x3e{point.x} - {point.x2}\x3c/span\x3e\x3cbr/\x3e',
 pointFormat:'\x3cspan style\x3d"color:{point.color}"\x3e\u25cf\x3c/span\x3e {series.name}: \x3cb\x3e{point.yCategory}\x3c/b\x3e\x3cbr/\x3e'},borderRadius:3},{type:"xrange",forceDL:!0,parallelArrays:["x","x2","y"],requireSorting:!1,animate:c.seriesTypes.line.prototype.animate,cropShoulder:1,getExtremesFromAll:!0,getColumnMetrics:function(){function a(){g(d.series,function(a){var b=a.xAxis;a.xAxis=a.yAxis;a.yAxis=b})}var b,d=this.chart;a();b=n.prototype.getColumnMetrics.call(this);a();return b},cropData:function(a,

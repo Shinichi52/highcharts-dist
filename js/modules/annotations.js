@@ -4,7 +4,7 @@
 
  (c) 2009-2017 Torstein Honsi
 
- License: www.highcharts.com/license
+ 
 */
 (function(m){"object"===typeof module&&module.exports?module.exports=m:m(Highcharts)})(function(m){(function(f){var n=f.merge,m=f.addEvent,v=f.extend,l=f.each,C=f.isString,x=f.isNumber,u=f.defined,D=f.isObject,E=f.inArray,y=f.erase,F=f.find,G=f.format,p=f.pick,H=f.destroyObjectProperties,z=f.Tooltip.prototype,I=f.Series.prototype,w=f.Chart.prototype,J={arrow:{render:!1,id:"arrow",refY:5,refX:5,markerWidth:10,markerHeight:10,children:[{tagName:"path",attrs:{d:"M 0 0 L 10 5 L 0 10 Z",strokeWidth:0}}]}},
 q={markerSetter:function(a){return function(b){this.attr(a,"url(#"+b+")")}}};v(q,{markerEndSetter:q.markerSetter("marker-end"),markerStartSetter:q.markerSetter("marker-start")});f.SVGRenderer.prototype.addMarker=function(a,b){a=p(a,f.uniqueKey());var c=this.createElement("marker").attr({id:a,markerWidth:p(b.markerWidth,20),markerHeight:p(b.markerHeight,20),refX:b.refX||0,refY:b.refY||0,orient:b.orient||"auto"}).add(this.defs),d={stroke:b.color||"none",fill:b.color||"rgba(0, 0, 0, 0.75)"};b=b.children;

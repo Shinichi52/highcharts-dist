@@ -1,11 +1,11 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  * Old IE (v6, v7, v8) module for Highcharts v6+.
  *
  * (c) 2010-2017 Highsoft AS
  * Author: Torstein Honsi
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -21,7 +21,7 @@
          *
          * Support for old IE browsers (6, 7 and 8) in Highcharts v6+. 
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         /* eslint max-len: 0 */
@@ -61,15 +61,15 @@
          * @type {String}
          * @apioption global.VMLRadialGradientURL
          * @default {highcharts}
-         *          http://code.highcharts.com/{version}/gfx/vml-radial-gradient.png
+         *          http://code./{version}/gfx/vml-radial-gradient.png
          * @default {highstock}
-         *          http://code.highcharts.com/highstock/{version}/gfx/vml-radial-gradient.png
+         *          http://code./highstock/{version}/gfx/vml-radial-gradient.png
          * @default {highmaps}
-         *          http://code.highcharts.com/{version}/gfx/vml-radial-gradient.png
+         *          http://code./{version}/gfx/vml-radial-gradient.png
          * @since 2.3.0
          */
         H.getOptions().global.VMLRadialGradientURL =
-            'http://code.highcharts.com/6.0.2/gfx/vml-radial-gradient.png';
+            'http://code./6.0.2/gfx/vml-radial-gradient.png';
 
 
         // Utilites

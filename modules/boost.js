@@ -5,7 +5,7 @@
  (c) 2010-2017 Highsoft AS
  Author: Torstein Honsi
 
- License: www.highcharts.com/license
+ 
 */
 (function(w){"object"===typeof module&&module.exports?module.exports=w:w(Highcharts)})(function(w){(function(l){function w(){var a=Array.prototype.slice.call(arguments),c=-Number.MAX_VALUE;B(a,function(a){if("undefined"!==typeof a&&null!==a&&"undefined"!==typeof a.length&&0<a.length)return c=a.length,!0});return c}function O(a){var c=0,e=0,f=!0,b;if("undefined"!==typeof a.boostForceChartBoost)return a.boostForceChartBoost;f=a.options.boost?"undefined"!==typeof a.options.boost.allowForce?a.options.boost.allowForce:
 f:f;if(1<a.series.length)for(var m=0;m<a.series.length;m++)b=a.series[m],P[b.type]&&++e,w(b.processedXData,b.options.data,b.points)>=(b.options.boostThreshold||Number.MAX_VALUE)&&++c;a.boostForceChartBoost=f&&e===a.series.length&&0<c||5<c;return a.boostForceChartBoost}function ha(a){function c(b,d){d=a.createShader("vertex"===d?a.VERTEX_SHADER:a.FRAGMENT_SHADER);a.shaderSource(d,b);a.compileShader(d);return a.getShaderParameter(d,a.COMPILE_STATUS)?d:!1}function e(){function b(b){return a.getUniformLocation(m,

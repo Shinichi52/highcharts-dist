@@ -1,10 +1,10 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  * Data module
  *
  * (c) 2012-2017 Torstein Honsi
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -20,7 +20,7 @@
          *
          * (c) 2012-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         /* global jQuery */
@@ -59,7 +59,7 @@
         /**
          * The Data module provides a simplified interface for adding data to
          * a chart from sources like CVS, HTML tables or grid views. See also
-         * the [tutorial article on the Data module](http://www.highcharts.com/docs/working-
+         * the [tutorial article on the Data module](http://www./docs/working-
          * with-data/data-module).
          *
          * It requires the `modules/data.js` file to be loaded.

@@ -1,11 +1,11 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  * Accessibility module
  *
  * (c) 2010-2017 Highsoft AS
  * Author: Oystein Moseng
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -22,7 +22,7 @@
          * (c) 2010-2017 Highsoft AS
          * Author: Oystein Moseng
          *
-         * License: www.highcharts.com/license
+         * 
          */
         /* eslint max-len: ["warn", 80, 4] */
 
@@ -130,7 +130,7 @@
 
             /**
              * Options for configuring accessibility for the chart. Requires the
-             * [accessibility module](//code.highcharts.com/modules/accessibility.
+             * [accessibility module](//code./modules/accessibility.
              * js) to be loaded. For a description of the module and information
              * on its features, see [Highcharts Accessibility](http://www.highcharts.
              * com/docs/chart-concepts/accessibility).

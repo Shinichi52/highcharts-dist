@@ -3,7 +3,7 @@
 
  (c) 2009-2017 Torstein Honsi
 
- License: www.highcharts.com/license
+ 
 */
 (function(h){"object"===typeof module&&module.exports?module.exports=h:h(Highcharts)})(function(h){(function(f){function h(){return Array.prototype.slice.call(arguments,1)}function u(c){c.apply(this);this.drawBreaks(this.xAxis,["x"]);this.drawBreaks(this.yAxis,r(this.pointArrayMap,["y"]))}var r=f.pick,g=f.wrap,q=f.each,y=f.extend,z=f.isArray,v=f.fireEvent,t=f.Axis,A=f.Series;y(t.prototype,{isInBreak:function(c,e){var b=c.repeat||Infinity,a=c.from,d=c.to-c.from;e=e>=a?(e-a)%b:b-(a-e)%b;return c.inclusive?
 e<=d:e<d&&0!==e},isInAnyBreak:function(c,e){var b=this.options.breaks,a=b&&b.length,d,n,w;if(a){for(;a--;)this.isInBreak(b[a],c)&&(d=!0,n||(n=r(b[a].showPoints,this.isXAxis?!1:!0)));w=d&&e?d&&!n:d}return w}});g(t.prototype,"setTickPositions",function(c){c.apply(this,Array.prototype.slice.call(arguments,1));if(this.options.breaks){var e=this.tickPositions,b=this.tickPositions.info,a=[],d;for(d=0;d<e.length;d++)this.isInAnyBreak(e[d])||a.push(e[d]);this.tickPositions=a;this.tickPositions.info=b}});

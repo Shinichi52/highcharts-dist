@@ -1,9 +1,9 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  *
  * 3D features for Highcharts JS
  *
- * @license: www.highcharts.com/license
+ * @
  */
 'use strict';
 (function(factory) {
@@ -17,7 +17,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         /**
          *	Mathematical Functionility
@@ -162,7 +162,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var cos = Math.cos,
             PI = Math.PI,
@@ -1108,7 +1108,7 @@
          *
          * Extension for 3D charts
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var Chart = H.Chart,
             each = H.each,
@@ -1245,7 +1245,7 @@
         /**
          * Options to render charts in 3 dimensions. 
          * This feature requires highcharts-3d.js, found in the download package, 
-         * or online at code.highcharts.com/highcharts-3d.js.
+         * or online at code./highcharts-3d.js.
          * @optionparent
          */
         var extendedOptions = {
@@ -1260,7 +1260,7 @@
                 /**
                  * Options to render charts in 3 dimensions. This feature requires
                  * `highcharts-3d.js`, found in the download package or online at
-                 * [code.highcharts.com/highcharts-3d.js](http://code.highcharts.com/highcharts-
+                 * [code./highcharts-3d.js](http://code./highcharts-
                  * 3d.js).
                  * 
                  * @since 4.0
@@ -2948,7 +2948,7 @@
          *
          * Extenstion for 3d axes
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var ZAxis,
 
@@ -3609,7 +3609,7 @@
          *
          * Extension to the Series object in 3D charts.
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var perspective = H.perspective,
             pick = H.pick,
@@ -3681,7 +3681,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var each = H.each,
             perspective = H.perspective,
@@ -4048,7 +4048,7 @@
          *
          * 3D pie series
          * 
-         * License: www.highcharts.com/license
+         * 
          */
         var deg2rad = H.deg2rad,
             each = H.each,
@@ -4235,7 +4235,7 @@
          *
          * Scatter 3D series.
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var Point = H.Point,
             seriesType = H.seriesType,
@@ -4369,7 +4369,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
 

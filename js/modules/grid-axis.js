@@ -6,7 +6,7 @@
 
  --- WORK IN PROGRESS ---
 
- License: www.highcharts.com/license
+ 
 */
 (function(n){"object"===typeof module&&module.exports?module.exports=n:n(Highcharts)})(function(n){(function(h){var n=h.dateFormat,p=h.each,t=h.isObject,r=h.pick,l=h.wrap,m=h.Axis,u=h.Chart,q=h.Tick;m.prototype.isOuterAxis=function(){var a=this,c=-1,b=!0;p(this.chart.axes,function(e,f){e.side===a.side&&(e===a?c=f:0<=c&&f>c&&(b=!1))});return b};q.prototype.getLabelWidth=function(){return this.label.getBBox().width};m.prototype.getMaxLabelLength=function(a){var c=this.tickPositions,b=this.ticks,e=0;
 if(!this.maxLabelLength||a)p(c,function(a){(a=b[a])&&a.labelLength>e&&(e=a.labelLength)}),this.maxLabelLength=e;return this.maxLabelLength};m.prototype.addTitle=function(){var a=this.chart.renderer,c=this.axisParent,b=this.horiz,e=this.opposite,f=this.options,d=f.title,g;this.showAxis=g=this.hasData()||r(f.showEmpty,!0);f.title="";this.axisTitle||((f=d.textAlign)||(f=(b?{low:"left",middle:"center",high:"right"}:{low:e?"right":"left",middle:"center",high:e?"left":"right"})[d.align]),this.axisTitle=

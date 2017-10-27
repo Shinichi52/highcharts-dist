@@ -1,12 +1,12 @@
 /**
- * @license Highcharts JS v6.0.2 (2017-10-20)
+ *  JS v6.0.2 (2017-10-20)
  * GridAxis
  *
  * (c) 2016 Lars A. V. Cabrera
  *
  * --- WORK IN PROGRESS ---
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -21,7 +21,7 @@
          * (c) 2016 Highsoft AS
          * Authors: Lars A. V. Cabrera
          *
-         * License: www.highcharts.com/license
+         * 
          */
 
         var dateFormat = H.dateFormat,

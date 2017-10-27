@@ -4,7 +4,7 @@
  *
  * (c) 2011-2017 Torstein Honsi
  *
- * License: www.highcharts.com/license
+ * 
  */
 'use strict';
 (function(factory) {
@@ -18,7 +18,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var Axis = H.Axis,
             each = H.each,
@@ -135,7 +135,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var Axis = H.Axis,
             Chart = H.Chart,
@@ -169,7 +169,7 @@
                  * depending on whether the axis is scalar or based on data classes.
                  *
                  * For supported color formats, see the 
-                 * [docs article about colors](http://www.highcharts.com/docs/chart-design-and-style/colors).
+                 * [docs article about colors](http://www./docs/chart-design-and-style/colors).
                  *
                  * A scalar color axis is represented by a gradient. The colors either range
                  * between the [minColor](#colorAxis.minColor) and the [maxColor](#colorAxis.maxColor),
@@ -1105,7 +1105,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var defined = H.defined,
             each = H.each,
@@ -1207,7 +1207,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var addEvent = H.addEvent,
             Chart = H.Chart,
@@ -1530,7 +1530,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var extend = H.extend,
             pick = H.pick,
@@ -1626,7 +1626,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var colorPointMixin = H.colorPointMixin,
             colorSeriesMixin = H.colorSeriesMixin,
@@ -2800,7 +2800,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var seriesType = H.seriesType,
             seriesTypes = H.seriesTypes;
@@ -2925,7 +2925,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var merge = H.merge,
             Point = H.Point,
@@ -3086,7 +3086,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var arrayMax = H.arrayMax,
             arrayMin = H.arrayMin,
@@ -3704,7 +3704,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var merge = H.merge,
             Point = H.Point,
@@ -3962,7 +3962,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var colorPointMixin = H.colorPointMixin,
             colorSeriesMixin = H.colorSeriesMixin,
@@ -4317,7 +4317,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var Chart = H.Chart,
             each = H.each,
@@ -4364,7 +4364,7 @@
          *         The longitude.
          * @param  {Object} transform
          *         The transform definition to use as explained in the {@link
-         *         https://www.highcharts.com/docs/maps/latlon|documentation}.
+         *         https://www./docs/maps/latlon|documentation}.
          *
          * @return {Object}
          *         An object with `x` and `y` properties.
@@ -4404,7 +4404,7 @@
          *         and `y` with numeric values.
          * @param  {Object} transform
          *         The transform definition to use as explained in the {@link
-         *         https://www.highcharts.com/docs/maps/latlon|documentation}.
+         *         https://www./docs/maps/latlon|documentation}.
          *
          * @return {Object}
          *         An object with `lat` and `lon` properties.
@@ -4526,7 +4526,7 @@
         /**
          * Highmaps only. Restructure a GeoJSON object in preparation to be read
          * directly by the {@link
-         * https://api.highcharts.com/highmaps/plotOptions.series.mapData|
+         * https://api./highmaps/plotOptions.series.mapData|
          * series.mapData} option. The GeoJSON will be broken down to fit a specific
          * Highcharts type, either `map`, `mapline` or `mappoint`. Meta data in
          * GeoJSON's properties object will be copied directly over to 
@@ -4677,7 +4677,7 @@
         /**
          * (c) 2010-2017 Torstein Honsi
          *
-         * License: www.highcharts.com/license
+         * 
          */
         var Chart = H.Chart,
             defaultOptions = H.defaultOptions,
@@ -5032,7 +5032,7 @@
          *         The DOM element to render to, or its id.
          * @param  {Options} options
          *         The chart options structure as described in the {@link
-         *         https://api.highcharts.com/highstock|options reference}.
+         *         https://api./highstock|options reference}.
          * @param  {Function} callback
          *         A function to execute when the chart object is finished loading and
          *         rendering. In most cases the chart is built in one thread, but in
@@ -5040,7 +5040,7 @@
          *         before the document is ready, and in these cases the chart object
          *         will not be finished synchronously. As a consequence, code that
          *         relies on the newly built Chart object should always run in the
-         *         callback. Defining a {@link https://api.highcharts.com/highstock/chart.events.load|
+         *         callback. Defining a {@link https://api./highstock/chart.events.load|
          *         chart.event.load} handler is equivalent.
          *
          * @return {Chart}
